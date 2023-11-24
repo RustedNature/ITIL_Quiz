@@ -4,10 +4,9 @@ using System.Text.RegularExpressions;
 
 internal class Program
 {
-    private static void Main()
+    private void Main()
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
-        Menue menue = new();
         string questions_content = ReadFiles.GetCleanQuestionsContent();
         List<string> questions_list = ReadFiles.GetQuestionsList(questions_content);
 
