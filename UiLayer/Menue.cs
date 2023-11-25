@@ -219,7 +219,7 @@ namespace UiLayer
             Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
             Console.WriteLine($"Frage {question_cnt} von {questions.Count}\n");
-            Console.WriteLine(question.QuestionText);
+            PrintQuestion(question);
             Console.WriteLine();
             Console.Write("Ihre Eingabe: ");
             answer = Console.ReadLine();
@@ -274,7 +274,10 @@ namespace UiLayer
                 }
             }
         }
-
+        public static void PrintQuestion(Question question)
+        {
+            Console.WriteLine(question.QuestionText);
+        }
         private static void CopyQuestionsFrom(List<Question> questions)
         {
             foreach (Question question in questions)
