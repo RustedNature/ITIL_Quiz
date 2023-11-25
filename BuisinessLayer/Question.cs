@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace BuisinessLayer
+namespace BusinessLayer
 {
 
 

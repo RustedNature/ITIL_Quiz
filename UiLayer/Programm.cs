@@ -1,4 +1,4 @@
-﻿using BuisinessLayer;
+﻿using BusinessLayer;
 
 namespace UiLayer
 {

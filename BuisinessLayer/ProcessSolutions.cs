@@ -1,7 +1,7 @@
 ﻿using DataLayer;
 using System.Text;
 using System.Text.RegularExpressions;
-namespace BuisinessLayer
+namespace BusinessLayer
 {
     public static class ProcessSolutions
     {

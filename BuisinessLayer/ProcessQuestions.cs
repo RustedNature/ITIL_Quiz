@@ -2,7 +2,7 @@
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace BuisinessLayer
+namespace BusinessLayer
 {
     internal static class ProcessQuestions
     {

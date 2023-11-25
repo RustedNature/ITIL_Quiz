@@ -1,4 +1,4 @@
-﻿namespace BuisinessLayer
+﻿namespace BusinessLayer
 {
     public class QuestionCollection
     {
