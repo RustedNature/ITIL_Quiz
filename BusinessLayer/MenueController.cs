@@ -152,27 +152,6 @@ namespace BusinessLayer
 
         }
 
-        public static void GetQuestionsForQuiz()
-        {
-            if (QuestionCountChoice == Questions.Count)
-            {
-                return;
-            }
-
-            GetRandomQuestionsForCount();
-
-        }
-
-        public static void RandomSortQuestions()
-        {
-            Questions = Questions.OrderBy(item => Guid.NewGuid()).ToList();
-        }
-
-        public static string GetQuestionText()
-        {
-            return Questions[IndexOfActualQuestionToAsk].QuestionText;
-        }
-
         public static void ValidateUserAnswer(string? user_answer)
         {
             ValidQuestionAnswer = false;
@@ -198,6 +177,27 @@ namespace BusinessLayer
             {
                 QuestionAnswer = user_answer;
             }
+        }
+
+        public static void GetQuestionsForQuiz()
+        {
+            if (QuestionCountChoice == Questions.Count)
+            {
+                return;
+            }
+
+            GetRandomQuestionsForCount();
+
+        }
+
+        public static void RandomSortQuestions()
+        {
+            Questions = Questions.OrderBy(item => Guid.NewGuid()).ToList();
+        }
+
+        public static string GetQuestionText()
+        {
+            return Questions[IndexOfActualQuestionToAsk].QuestionText;
         }
 
         public static bool RightAnswer()
