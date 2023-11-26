@@ -5,15 +5,12 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\DataLayer.csproj", "{718FD2AA-97BF-4BB0-8FAC-37C66A3C8FDE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BuisinessLayer\BusinessLayer.csproj", "{BDE43398-C420-4D82-A8F3-F3C482EB6012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{BDE43398-C420-4D82-A8F3-F3C482EB6012}"
 	ProjectSection(ProjectDependencies) = postProject
 		{718FD2AA-97BF-4BB0-8FAC-37C66A3C8FDE} = {718FD2AA-97BF-4BB0-8FAC-37C66A3C8FDE}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UiLayer", "UiLayer\UiLayer.csproj", "{1ED24849-91DF-4372-9BBD-0BCAACF52DDB}"
-	ProjectSection(ProjectDependencies) = postProject
-		{BDE43398-C420-4D82-A8F3-F3C482EB6012} = {BDE43398-C420-4D82-A8F3-F3C482EB6012}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

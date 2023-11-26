@@ -7,7 +7,7 @@ namespace UiLayer
         internal static void Main()
         {
             Question.CreateQuestionList();
-            Menue.Start();
+            Menue.StartProgramm();
         }
     }
 }
