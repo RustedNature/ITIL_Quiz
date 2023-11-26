@@ -5,19 +5,37 @@ namespace UiLayer
     public class Menue
     {
         static readonly string title =
-            "IIIIIIIIIIIIII       TTTTTTTTTTTTTTTTT             IIIIIIIIIIIII         LLLLL\n" +
-            "IIIIIIIIIIIIII       TTTTTTTTTTTTTTTTT             IIIIIIIIIIIII         LLLLL\n" +
-            "     IIIII                 TTTT                        IIIII             LLLLL\n" +
-            "     IIIII                 TTTT                        IIIII             LLLLL\n" +
-            "     IIIII                 TTTT                        IIIII             LLLLL\n" +
-            "     IIIII                 TTTT                        IIIII             LLLLL\n" +
-            "     IIIII                 TTTT                        IIIII             LLLLL\n" +
-            "IIIIIIIIIIIIII             TTTT                    IIIIIIIIIIIII         LLLLLLLLLLLLL\n" +
-            "IIIIIIIIIIIIII             TTTT                    IIIIIIIIIIIII         LLLLLLLLLLLLL\n";
+            "IIIIIIIIIIIIII         TTTTTTTTTTTTTTTTT         IIIIIIIIIIIII         LLLLL\n" +
+            "IIIIIIIIIIIIII         TTTTTTTTTTTTTTTTT         IIIIIIIIIIIII         LLLLL\n" +
+            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
+            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
+            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
+            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
+            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
+            "IIIIIIIIIIIIII               TTTT                IIIIIIIIIIIII         LLLLLLLLLLLLL\n" +
+            "IIIIIIIIIIIIII               TTTT                IIIIIIIIIIIII         LLLLLLLLLLLLL\n";
         private static bool valid_input = false;
         static int RightAnswerCount { get; set; } = 0;
 
         static List<Question> questions = [];
+
+
+
+        public static void FlowLogic()
+        {
+            PrintChoices();
+            GetUserChoice();
+            GetQuestions();
+            PrintQuestionCountChoice();
+            GetUserQuestionCountChoice();
+            StartQuiz();
+            ShowStatistics();
+        }
+
+
+
+
+
 
         public static void Start()
         {

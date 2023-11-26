@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Not to share 
+\BusinessLayer\txts\questions.txt
+\BusinessLayer\txts\solutions.txt
