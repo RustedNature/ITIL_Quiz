@@ -17,7 +17,7 @@ namespace UiLayer
         private static bool valid_input = false;
         static int RightAnswerCount { get; set; } = 0;
 
-        static List<Question> questions = new();
+        static List<Question> questions = [];
 
         public static void Start()
         {
@@ -57,7 +57,7 @@ namespace UiLayer
         private static int GetQuestionCount()
         {
             bool valid_question_count;
-            int parsed_input = 0;
+            int parsed_input;
             do
             {
                 Console.Clear();
@@ -96,7 +96,7 @@ namespace UiLayer
             do
             {
                 PrintTitle();
-                Console.WriteLine("Herzlich Wilkommen in einem der besten ITIL Trainer auf dem ganzen Mars");
+                Console.WriteLine("Herzlich Wilkommen in einem der besten ITIL Trainer auf dem Mars");
                 Console.WriteLine();
                 Console.WriteLine($"[1] Prüfungsfragen, Anzahl: {QuestionCollection.PQuestions.Count}");
                 Console.WriteLine($"[2] AP Fragen, Anzahl: {QuestionCollection.APQuestions.Count}");

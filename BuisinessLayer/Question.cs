@@ -20,10 +20,7 @@ namespace BusinessLayer
             QuestionOrigin = questionOrigin;
         }
 
-        public void PrintQuestion()
-        {
-            Console.WriteLine(QuestionText);
-        }
+
 
         public static void CreateQuestionList()
         {
