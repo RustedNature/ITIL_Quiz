@@ -16,8 +16,8 @@ namespace BusinessLayer
         public static List<Question> Questions { get; set; } = [];
         public static int QuestionCountChoice { get; set; } = 0;
         public static int IndexOfActualQuestionToAsk { get; set; } = 0;
-        public static string QuestionAnswer { get; set; } = string.Empty;
         public static int RightAnswers { get; set; } = 0;
+        public static string QuestionAnswer { get; set; } = string.Empty;
 
         private static void GetRandomQuestionsForCount()
         {

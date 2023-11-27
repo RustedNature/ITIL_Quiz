@@ -1,12 +1,10 @@
-﻿using BusinessLayer;
-
-namespace UiLayer
+﻿namespace UiLayer
 {
     public class Programm
     {
         internal static void Main()
         {
-            Question.CreateQuestionList();
+
             Menue.StartProgramm();
         }
     }

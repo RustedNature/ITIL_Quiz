@@ -155,6 +155,8 @@ namespace UiLayer
 
         public static void StartProgramm()
         {
+            Console.Title = "ITIL QUIZ";
+            Question.CreateQuestionList();
             FlowLogic();
         }
 
