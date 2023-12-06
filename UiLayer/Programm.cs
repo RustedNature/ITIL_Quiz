@@ -4,7 +4,6 @@
     {
         internal static void Main()
         {
-
             Menue.StartProgramm();
         }
     }

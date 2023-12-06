@@ -6,11 +6,11 @@ namespace UiLayer
         static readonly string title =
             "IIIIIIIIIIIIII         TTTTTTTTTTTTTTTTT         IIIIIIIIIIIII         LLLLL\n" +
             "IIIIIIIIIIIIII         TTTTTTTTTTTTTTTTT         IIIIIIIIIIIII         LLLLL\n" +
-            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
-            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
-            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
-            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
-            "     IIIII                   TTTT                    IIIII             LLLLL\n" +
+            "     IIII                    TTTT                    IIII              LLLLL\n" +
+            "     IIII                    TTTT                    IIII              LLLLL\n" +
+            "     IIII                    TTTT                    IIII              LLLLL\n" +
+            "     IIII                    TTTT                    IIII              LLLLL\n" +
+            "     IIII                    TTTT                    IIII              LLLLL\n" +
             "IIIIIIIIIIIIII               TTTT                IIIIIIIIIIIII         LLLLLLLLLLLLL\n" +
             "IIIIIIIIIIIIII               TTTT                IIIIIIIIIIIII         LLLLLLLLLLLLL\n";
 

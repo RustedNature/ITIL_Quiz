@@ -1,0 +1,19 @@
+﻿<Window x:Class="GUI_Layer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_Layer"
+        mc:Ignorable="d"
+        Title="ITIL QUIZ" Height="450" Width="800">
+    <Grid>
+           
+        <Button x:Name="Button_A" Content="A" Margin="75,353,572,35" Click="Button_A_Click"/>
+        <Button x:Name="Button_B" Content="B" Margin="233,353,414,35" Click="Button_B_Click"/>
+        <Button x:Name="Button_C" Content="C" Margin="391,353,256,35" Click="Button_C_Click"/>
+        <Button x:Name="Button_D" Content="D" Margin="549,353,98,35"  Click="Button_D_Click"/>
+        <TextBox x:Name="Question_Text_Box" TextWrapping="Wrap" Text="TextBox" Margin="75,67,98,149"/>
+        <Label x:Name="Titel" Content="ITIL QUIZ" Margin="233,10,256,383" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
+
+    </Grid>
+</Window>
