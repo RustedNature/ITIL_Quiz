@@ -1,0 +1,38 @@
+﻿<Page x:Class="GuiLayer.ChooseOptionsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GuiLayer"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Background="SlateGray"
+      Title="ChooseOptionsPage">
+    
+        
+
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
+            <TextBlock Text="Wählen Sie aus, aus welchem Bereichen Sie fragen beantworten möchten!" Margin="0,25,0,0" FontWeight="Bold" FontSize="22" TextWrapping="WrapWithOverflow" />
+            <CheckBox x:Name="Prüfungsfragen" Content="Prüfungsfragen (147 Fragen)" Margin="25,20,0,0" FontSize="16" Checked="Prüfungsfragen_Checked" Unchecked="Prüfungsfragen_Unchecked"/>
+            <CheckBox x:Name="APfragen" Content="AP Fragen (54 Fragen)" Margin="25,3,0,0" FontSize="16" Checked="APfragen_Checked" Unchecked="APfragen_Unchecked"/>
+            <CheckBox x:Name="Mfragen" Content="M Fragen (xx Fragen)" Margin="25,3,0,0" FontSize="16" Checked="Mfragen_Checked" Unchecked="Mfragen_Unchecked"/>
+            <CheckBox x:Name="Ffragen" Content="F Fragen (2 Fragen)" Margin="25,3,0,0" FontSize="16" Checked="Ffragen_Checked" Unchecked="Ffragen_Unchecked"/>
+            <CheckBox x:Name="Efragen" Content="E Fragen (3 Fragen)" Margin="25,3,0,0" FontSize="16" Checked="Efragen_Checked" Unchecked="Efragen_Unchecked"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="ChooseAmountText" Content="Geben Sie ein Zahl zwischen 1 und X ein: " HorizontalAlignment="Right" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="ChoosenAmountQuestions" Grid.Row="0" Grid.Column="1"  FontSize="16" VerticalContentAlignment="Center" />
+            
+        </Grid>
+        <Button x:Name="BtnWeiter" Grid.Column="1" Grid.Row="1" Content="WEITER" Click="BtnContinue_Click" Margin="0,100,0,0" Height="50" Width="250"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            
+        </StackPanel>
+    
+</Page>
